@@ -1,0 +1,297 @@
+body {
+    background: #181a1b;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+}
+ul {
+    list-style-position: outside; /* ou inside si tu préfères */
+    text-align: left;
+    padding-left: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px; /* adapte selon la largeur souhaitée */
+}
+
+.centre {
+    text-align: center;
+    margin: 32px auto 30px auto;
+    max-width: 700px;
+}
+
+.centre h1 {
+    margin-bottom: 10px;
+}
+
+.centre p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bloc-tournois {
+    background: #23272a;
+    border-left: 6px solid #00bfff;
+    margin: 32px 0;
+    padding: 24px 18px;
+    border-radius: 18px;
+}
+
+.bloc-regles {
+    background: #20232a;
+    border-left: 6px solid #ffd700;
+    margin: 32px 0;
+    padding: 24px 18px;
+    border-radius: 18px;
+}
+
+.bloc-classement {
+    background: #181a1b;
+    border-left: 6px solid #50c878;
+    margin: 32px 0;
+    padding: 24px 18px;
+    border-radius: 18px;
+}
+
+.bloc-recompenses {
+    background: #23272a;
+    border-left: 6px solid #e0115f;
+    margin: 32px 0;
+    padding: 24px 18px;
+    border-radius: 18px;
+}
+
+.bloc-services {
+    background: #20232a;
+    border-left: 6px solid #b9f2ff;
+    margin: 32px 0;
+    padding: 24px 18px;
+    border-radius: 18px;
+}
+
+.bloc-contact {
+    background: #23272a;
+    border-left: 6px solid #cd7f32;
+    margin: 32px 0 48px 0;
+    padding: 24px 18px;
+    border-radius: 18px;
+}
+
+
+
+h2 {
+    color: #00bfff;
+    margin-top: 0;
+}
+
+a {
+    color: #00bfff;
+    text-decoration: underline;
+}
+
+.tableau-paliers {
+    width: 100%;
+    max-width: 400px;
+    margin: 24px auto;
+    border-collapse: collapse;
+    background: #23272a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px #0005;
+}
+.tableau-paliers th, .tableau-paliers td {
+    padding: 12px 16px;
+    text-align: left;
+}
+.tableau-paliers th {
+    background: #181a1b;
+    color: #00bfff;
+    font-size: 1.1em;
+}
+.tableau-paliers tr:nth-child(even) {
+    background: #20232a;
+}
+.tableau-paliers tr:nth-child(odd) {
+    background: #23272a;
+}
+.tableau-paliers td {
+    font-size: 1.1em;
+}
+
+/* Badges et nom de palier */
+.badge {
+    transition: box-shadow 0.3s, background 0.3s, color 0.3s;
+    border-radius: 50%;
+    padding: 6px 12px;
+    cursor: pointer;
+    background: transparent;
+    display: inline-block;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+.nom-palier {
+    display: inline-block;
+    margin-left: 10px;
+    transition: box-shadow 0.3s, color 0.3s, background 0.3s;
+    padding: 2px 10px;
+    border-radius: 8px;
+}
+
+/* Effet groupé au survol du badge */
+.badge.bronze:hover,
+.badge.bronze:hover ~ .nom-palier.bronze {
+    background: #cd7f32;
+    box-shadow: 0 0 16px 4px #cd7f32;
+    color: #fff;
+}
+.badge.argent:hover,
+.badge.argent:hover ~ .nom-palier.argent {
+    background: #c0c0c0;
+    box-shadow: 0 0 16px 4px #c0c0c0;
+    color: #222;
+}
+.badge.or:hover,
+.badge.or:hover ~ .nom-palier.or {
+    background: #ffd700;
+    box-shadow: 0 0 16px 4px #ffd700;
+    color: #222;
+}
+.badge.platine:hover,
+.badge.platine:hover ~ .nom-palier.platine {
+    background: #b9f2ff;
+    box-shadow: 0 0 16px 4px #b9f2ff;
+    color: #222;
+}
+.badge.diamant:hover,
+.badge.diamant:hover ~ .nom-palier.diamant {
+    background: #00e1ff;
+    box-shadow: 0 0 16px 4px #00e1ff;
+    color: #222;
+}
+.badge.saphir:hover,
+.badge.saphir:hover ~ .nom-palier.saphir {
+    background: #0f52ba;
+    box-shadow: 0 0 16px 4px #0f52ba;
+    color: #fff;
+}
+.badge.rubis:hover,
+.badge.rubis:hover ~ .nom-palier.rubis {
+    background: #e0115f;
+    box-shadow: 0 0 16px 4px #e0115f;
+    color: #fff;
+}
+.badge.emeraude:hover,
+.badge.emeraude:hover ~ .nom-palier.emeraude {
+    background: #50c878;
+    box-shadow: 0 0 16px 4px #50c878;
+    color: #fff;
+}
+.badge.onyx:hover,
+.badge.onyx:hover ~ .nom-palier.onyx {
+    background: #353839;
+    box-shadow: 0 0 16px 4px #353839;
+    color: #fff;
+}
+.badge.legende:hover,
+.badge.legende:hover ~ .nom-palier.legende {
+    background: linear-gradient(90deg, #ffd700, #fff, #ffd700);
+    box-shadow: 0 0 24px 6px gold;
+    color: #222;
+}
+/* Menu de navigation */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    padding: 18px 0;
+    background: #000000;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+}
+
+/* Boutons du menu avec effet glow arc-en-ciel */
+.menu button {
+    position: relative;
+    background: #23283a;
+    color: #00bfff;
+    border: 2px solid #00bfff;
+    padding: 10px 28px;
+    border-radius: 14px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    z-index: 0;
+    overflow: hidden;
+    margin: 0 12px;
+}
+.menu button a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+/* Glow arc-en-ciel */
+.menu button::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #23283a;
+    left: 0;
+    top: 0;
+    border-radius: 14px;
+}
+.menu button::before {
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #FF0000, #FF7300, #FFFB00, #48FF00,
+        #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    background-size: 600%;
+    z-index: -2;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 18px;
+    opacity: 0;
+}
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+.menu button:hover::before {
+    opacity: 1;
+}
+.menu button:active::after {
+    background: transparent;
+}
+.menu button:active {
+    color: #000;
+    font-weight: bold;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inscription.css">
+    <link rel="icon" type="image/png" href="7-gaming.ico">
+    <title>S'inscrire</title>
+</head>
+
+<body>
+    <div class="inscription-container">
+        <a href="7gaming.html">
+            <img src="7-gaming.png" alt="logo 7-gaming" class="logo"><br>
+        </a>
+
+
+        <form action="traitement_inscription.php" method="post" class="form-inscription">
+
+            <h2>Créer un compte</h2>
+
+            <label for="pseudo">Pseudo :</label><br>
+            <input type="text" id="pseudo" name="pseudo" required title="Choisissez un pseudo"><br>
+
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email" required title="Entrez une adresse email valide"><br>
+
+
+            <label for="email_confirm">Confirmer l'email :</label><br>
+            <input type="email" id="email_confirm" name="email_confirm" required
+                title="Confirmez votre adresse email"><br>
+
+
+            <label for="nom">Nom :</label><br>
+            <input type="text" name="nom" id="nom" required title="Votre nom de famille"><br>
+
+            <label for="password">Mot de passe :</label><br>
+            <input type="password" id="password" name="password" required title="Choisissez un mot de passe"><br>
+
+
+            <label for="password_confirm">Confirmer le mot de passe :</label><br>
+            <input type="password" id="password_confirm" name="password_confirm" required
+                title="Répétez votre mot de passe"><br>
+
+
+            <label for="prenom">Prénom :</label><br>
+            <input type="text" name="prenom" id="prenom" required title="Votre prénom"><br>
+
+
+            <label for="date_de_naissance">Date de naissance :</label><br>
+            <input type="date" name="date_de_naissance" id="date_de_naissance" required
+                title="Votre date de naissance"><br>
+
+            <label for="adresse"> Adresse :</label><br>
+            <input type="text" name="adresse" id="adresse" required title="Votre adresse postale"><br>
+
+            <label for="code_postal">Code postal :</label><br>
+            <input type="text" name="code_postal" id="code_postal" required title="Votre code postal"><br>
+
+            <label for="ville">Ville :</label><br>
+            <input type="text" name="ville" id="ville" required title="Votre ville"><br>
+
+            <label for="pays">Pays :</label><br>
+            <input type="text" name="pays" id="pays" required title="Votre pays"><br>
+
+            <label for="telephone">Numéro de téléphone :</label><br>
+            <input type="tel" name="telephone" id="telephone" required title="Votre numéro de téléphone"><br>
+
+
+            <label>
+                <input type="checkbox" name="majeur" required>
+                Je certifie avoir plus de 18 ans
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="cgu" required>
+                J’accepte les <a href="cgu.html" target="_blank">conditions d’utilisation</a> et la <a
+                    href="confidentialite.html" target="_blank">politique de confidentialité</a>
+            </label><br>
+
+            <p class="info-rgpd">
+                Les informations recueillies sont nécessaires pour la gestion de votre compte et le respect de la
+                législation sur les jeux d'argent. Elles ne seront jamais revendues. Consultez notre politique de
+                confidentialité pour en savoir plus.
+            </p>
+
+            <button type="submit">S’inscrire</button>
+            <p>Déjà inscrit ? <a href="connection.html">Connectez-vous</a></p>
+            <p>En vous inscrivant, vous acceptez de recevoir des emails concernant votre compte et nos offres spéciales.
+            </p>
+            <p>Vous pouvez vous désinscrire à tout moment en cliquant sur le lien de désinscription dans nos emails.</p>
+            <p>Nous ne partageons pas vos informations personnelles avec des tiers sans votre consentement.</p>
+            <p>Pour toute question, n'hésitez pas à nous contacter via notre page de <a href="contact.html">contact</a>.
+            </p>
+            <p>Merci de faire partie de notre communauté !</p>
+            <p>Nous sommes impatients de vous accueillir sur notre plateforme !</p><br>
+
+            <p class="droit-de-reserve">
+                <strong>Droit de réserve :</strong><br>
+                7.Gaming se réserve le droit de refuser ou de supprimer un compte utilisateur en cas de non-respect des
+                conditions d’utilisation ou de comportement inapproprié.<br>
+                Toute tentative de fraude, d’usurpation d’identité ou de triche entraînera la suspension immédiate du
+                compte.<br>
+                Le respect et la sécurité de la communauté sont notre priorité.
+            </p>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

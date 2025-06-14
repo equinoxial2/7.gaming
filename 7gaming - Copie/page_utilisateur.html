@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Page utilisateur</h1>
+    <p>Bienvenue sur votre page utilisateur !</p>
+    <!-- Affichage de l'image de profil -->
+<img id="photo-profil" src="images/profil_defaut.png" alt="Photo de profil" width="120" height="120">
+
+<!-- Formulaire pour changer l'image -->
+<form action="upload_profil.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="nouvelle_photo" accept="image/*" required>
+    <button type="submit">Changer la photo</button>
+</form>
+    
+
+    
+</body>
+</html>

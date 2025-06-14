@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="service.css">
+    
+    <title>Nos services - 7.Gaming</title>
+</head>
+<body>
+    
+    <a href="7gaming.html">
+        <img src="7-gaming.png" alt="logo 7-gaming" class="logo">
+    </a>
+    <br>
+
+
+    <div class="centre">
+    <h1>Bienvenue sur notre page de services</h1>
+    <p>Découvrez tout ce que 7.Gaming vous propose pour vivre le jeu vidéo autrement !</p>
+</div>
+
+
+
+    <section class="services">
+    <h2>Tournois</h2>
+
+    <section class="regles-tournoi">
+        <h3>Règles générales des tournois</h3>
+        <p>
+            Tous nos tournois, qu’il s’agisse du <strong>Tournoi Flash</strong> ou du <strong>Tournoi Prestige</strong>, suivent les mêmes principes pour garantir une expérience équitable et compétitive à chaque participant :
+        </p>
+        <ul>
+            <li><strong>Équité :</strong> Les joueurs sont regroupés par niveau pour assurer des matchs équilibrés.</li>
+            <li><strong>Élimination directe :</strong> Chaque tournoi se joue en élimination directe : une défaite et le joueur est éliminé du tournoi.</li>
+            <li><strong>Liste d’attente :</strong> Le tournoi démarre automatiquement dès que le nombre de participants requis est atteint.</li>
+            <li><strong>Respect et fair-play :</strong> Tout comportement inapproprié, triche ou tentative de fraude entraînera l’exclusion immédiate du tournoi et la suspension du compte.</li>
+            <li><strong>Récompenses :</strong> Les gains sont attribués selon le classement final du tournoi, conformément à la répartition indiquée pour chaque format.</li>
+            <li><strong>Inscription :</strong> La participation à un tournoi nécessite le paiement de la mise d’entrée correspondante.</li>
+            <li><strong>Décisions :</strong> L’équipe 7.Gaming se réserve le droit de statuer en cas de litige ou de non-respect des règles.</li>
+        </ul>
+        
+    </section>
+    <ul>
+        <li>
+            <strong>Tournoi Flash</strong> <span style="font-size:1.2em;">⚡</span><br>
+            <button onclick="document.getElementById('flash-modal').style.display='block'">En savoir plus sur le Tournoi Flash</button>
+            <div id="flash-modal" style="display:none; background:#23272a; color:#fff; padding:20px; border-radius:10px; margin-top:20px;">
+                <h3>Tournoi Flash</h3>
+                <p>
+                    <strong>Mise d’entrée :</strong> 5 € par participant<br>
+                    <strong>Nombre de joueurs :</strong> 8<br>
+                    <strong>Format :</strong> Élimination directe<br>
+                    <strong>Principe :</strong> Dès que la liste d’attente est complète, le tournoi démarre automatiquement. Tous les participants sont de niveau similaire pour garantir l’équité.<br>
+                    <strong>Récompense :</strong> Le gagnant remporte la cagnotte du tournoi.
+                </p>
+                <button onclick="document.getElementById('flash-modal').style.display='none'">Fermer</button>
+            </div>
+        </li>
+        <li>
+            <strong>Tournoi Prestige</strong> <span style="font-size:1.2em;">🏆</span><br>
+            <button onclick="document.getElementById('prestige-modal').style.display='block'">En savoir plus sur le Tournoi Prestige</button>
+            <div id="prestige-modal" style="display:none; background:#23272a; color:#fff; padding:20px; border-radius:10px; margin-top:20px;">
+                <h3>Tournoi Prestige</h3>
+                <p>
+                    <strong>Mise d’entrée :</strong> 50 € par participant<br>
+                    <strong>Nombre de joueurs :</strong> 8<br>
+                    <strong>Format :</strong> Élimination directe<br>
+                    <strong>Principe :</strong> Dès que la liste d’attente est remplie, le tournoi commence. Les joueurs sont sélectionnés pour avoir un niveau équivalent.<br>
+                    <strong>Répartition des gains :</strong><br>
+                    1er : 300 €<br>
+                    2ème : 120 €<br>
+                    3ème : 20 €<br>
+                    4ème : 10 €
+                </p>
+                <button onclick="document.getElementById('prestige-modal').style.display='none'">Fermer</button>
+            </div>
+        </li>
+    </ul>
+    <p>
+            Pour toute question ou précision, consultez notre <a href="contact.html">page de contact</a> ou notre règlement complet.
+        </p>
+    
+    <ul>
+        <li>
+            <strong>Paris entre joueurs :</strong> Misez sur vos propres performances ou sur celles de vos amis lors de matchs organisés.
+        </li>
+        <li>
+            <strong>Classements & Récompenses :</strong> Progressez dans le classement, gagnez des récompenses et transformez vos victoires en gains réels.
+        </li>
+        <section class="classement-systeme"><br>
+    <h2>Système de points & classement</h2>
+    <p>
+        Sur 7.Gaming, chaque joueur possède un classement évolutif basé sur ses victoires et défaites lors des tournois et défis.<br> Plus tu gagnes, plus tu montes dans les paliers !<br> Voici comment fonctionne notre système :
+    </p>
+    <br>
+    <ul>
+        <li><strong>Points de classement :</strong> Chaque joueur commence avec 0 points.</li>
+        <li><strong>Défis :</strong> Tu peux défier d’autres joueurs pour gagner des points et améliorer ton classement.</li>
+        <li><strong>Résultats des défis :</strong> Les résultats des défis influencent directement ton score de classement :</li><br>
+    <ul>
+        <li><strong>Victoire :</strong> +5 points</li>
+        <li><strong>Défaite :</strong> -3 points</li>
+        <li><strong>Paliers :</strong> Il existe 10 paliers :</li>
+        <table class="tableau-paliers">
+    <thead>
+        <tr>
+            <th>Badge</th>
+            <th>Nom du palier</th>
+        </tr>
+    </thead>
+    
+        <tr><td><span class="badge bronze">🥉</span></td><td><span class="nom-palier bronze">Bronze</span></td></tr>
+        <tr><td><span class="badge argent">🥈</span></td><td><span class="nom-palier argent">Argent</span></td></tr>
+        <tr><td><span class="badge or">🥇</span></td><td><span class="nom-palier or">Or</span></td></tr>
+        <tr><td><span class="badge platine">💠</span></td><td><span class="nom-palier platine">Platine</span></td></tr>
+        <tr><td><span class="badge diamant">💎</span></td><td><span class="nom-palier diamant">Diamant</span></td></tr>
+        <tr><td><span class="badge saphir">🔷</span></td><td><span class="nom-palier saphir">Saphir</span></td></tr>
+        <tr><td><span class="badge rubis">🔴</span></td><td><span class="nom-palier rubis">Rubis</span></td></tr>
+        <tr><td><span class="badge emeraude">🟢</span></td><td><span class="nom-palier emeraude">Émeraude</span></td></tr>
+        <tr><td><span class="badge onyx">⚫</span></td><td><span class="nom-palier onyx">Onyx</span></td></tr>
+        <tr><td><span class="badge legende">👑</span></td><td><span class="nom-palier legende">Légende</span></td></tr>
+    
+</table>
+        <li><strong>Progression :</strong> Pour atteindre un nouveau palier, il faut accumuler 50 points et remporter au moins 3 victoires sur les 5 derniers défis joués.</li>
+        <li><strong>Descente :</strong> Si tu descends sous 50 points dans un palier et perds plus de 3 défis sur 5, tu redescends au palier inférieur.</li>
+        <li><strong>Classement :</strong> Plus tu progresses dans les paliers, plus tu accèdes à des tournois prestigieux et à des récompenses exclusives !</li>
+    </ul>
+    <p>
+        Ce système récompense la régularité, la progression et le fair-play. À toi de jouer pour atteindre le palier <strong>Légende</strong> et devenir l’un des meilleurs de la plateforme !
+    </p>
+    <section class="recompenses-paliers">
+    <h2>Récompenses de progression</h2>
+    <p>
+        À chaque fois que tu montes d’un palier, tu débloques des avantages exclusifs :
+    </p>
+    <ul>
+        <li><strong>Badges ou titres spéciaux :</strong> Affiche fièrement ton niveau grâce à des badges uniques visibles sur ton profil et dans le classement.</li>
+        <li><strong>Accès à des tournois exclusifs :</strong> Certains tournois, comme le <strong>Tournoi Prestige</strong>, sont réservés aux joueurs ayant atteint un certain palier.</li>
+        <li><strong>Réductions sur les frais d’inscription :</strong> Profite de réductions pour t’inscrire à certains tournois en fonction de ton palier.</li>
+        <li><strong>Mise en avant dans le classement :</strong> Les meilleurs joueurs sont mis en avant dans le classement général et bénéficient d’une visibilité accrue sur la plateforme.</li>
+        <li><strong>Fair-play récompensé :</strong> Les joueurs les plus fair-play et les moins toxiques recevront des avantages et des récompenses supplémentaires, pour encourager un esprit positif et respectueux dans la communauté.</li>
+    </ul>
+    <p>
+        Et ce n’est pas tout : d’autres surprises et avantages exclusifs pourront être ajoutés au fil du temps pour récompenser les joueurs les plus actifs et fidèles.<br>
+        Reste connecté, de nouveaux privilèges pourraient bientôt faire leur apparition !
+    </p>
+</section>
+</section>
+        <li>
+            <strong>Communauté & entraide :</strong> Rejoignez une communauté passionnée, échangez des conseils et trouvez des partenaires de jeu.
+        </li>
+        <li>
+            <strong>Sécurité & équité :</strong> Profitez d’un environnement sécurisé, avec une modération active et des règles claires pour garantir l’équité.
+        </li>
+    </ul><br>
+</section>
+    <h2>Contactez-nous</h2>
+    <p>Pour plus d'informations, veuillez nous contacter via notre <a href="contact.html">page de contact</a>.</p>
+</body>
+</html>

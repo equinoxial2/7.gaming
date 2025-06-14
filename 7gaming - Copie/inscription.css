@@ -1,0 +1,138 @@
+body {
+    background: #181a1b;
+    color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 0;
+
+}
+img{
+    flex-direction: column;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+}
+
+.form-inscription {
+    background: #23272a;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgb(255, 0, 221);
+    padding: 32px 28px 24px 28px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.form-inscription h2 {
+    text-align: center;
+    color: #7289da;
+    margin-bottom: 18px;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.form-inscription label {
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #b9bbbe;
+    font-size: 1em;
+}
+
+.form-inscription input[type="text"],
+.form-inscription input[type="email"],
+.form-inscription input[type="password"],
+.form-inscription input[type="date"],
+.form-inscription input[type="tel"] {
+    padding: 12px 10px;
+    border: none;
+    border-radius: 6px;
+    background: #2c2f33;
+    color: #f1f1f1;
+    font-size: 1em;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    outline: none;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.form-inscription input:focus {
+    background: #23272a;
+    box-shadow: 0 0 0 2px #7289da;
+}
+
+.souvenir-moi {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.97em;
+    color: #b9bbbe;
+}
+
+.souvenir-moi input[type="checkbox"] {
+    accent-color: #7289da;
+    margin-right: 8px;
+}
+
+button {
+    background: linear-gradient(90deg, #3300ff, #ee00ff, #3300ff);
+    background-size: 200% 200%;
+    color: #fff;
+    border: none;
+    padding: 13px 0;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    animation: glowing 4s linear infinite;
+    transition: background 0.4s, opacity .3s;
+    box-shadow: 0 2px 8px rgba(50,0,255,0.10);
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+button:hover {
+    opacity: 0.92;
+}
+
+.deja-membre, .mot-de-passe-oublie {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.deja-membre a, .mot-de-passe-oublie a {
+    color: #7289da;
+    text-decoration: none;
+    font-size: 0.97em;
+    transition: color 0.2s;
+}
+.deja-membre a:hover, .mot-de-passe-oublie a:hover {
+    color: #ee00ff;
+}
+
+a {
+    color: #00bfff; /* Choisis la couleur que tu veux */
+    text-decoration: underline; /* optionnel */
+}
+a:hover {
+    color: #ee00ff; /* Couleur au survol */
+}
+.droit-de-reserve a {
+    color: #ff0000;
+    text-decoration: underline;
+}
+.droit-de-reserve a:hover {
+    color: #00bfff;
+}

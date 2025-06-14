@@ -1,0 +1,150 @@
+
+body {
+    background: #1a1a1a;
+    color: #f1f1f1;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+}
+
+
+
+.a-propos-container {
+    background: #23272a;
+    border-left: 6px solid #ff00b3;
+    border-radius: 18px;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 32px 28px;
+    box-shadow: 0 2px 16px #0005;
+    color: #f1f1f1;
+}
+
+.a-propos-container h1,
+.a-propos-container h2 {
+    color: #00bfff;
+    margin-top: 0;
+    text-align: center;
+}
+
+.a-propos-container p {
+    font-size: 1.15em;
+    line-height: 1.7;
+    margin: 18px 0;
+    text-align: center;
+}
+
+.a-propos-container ul {
+    list-style-position: inside;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 500px;
+    padding-left: 0;
+}
+
+.a-propos-container li {
+    margin-bottom: 10px;
+    font-size: 1.08em;
+}
+.a-propos-container ol {
+    list-style-position: inside;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 500px;
+    padding-left: 0;
+}
+@media (max-width: 600px) {
+    .a-propos-container {
+        padding: 16px 5vw;
+        max-width: 98vw;
+    }
+    img {
+        width: 90vw;
+        max-width: 300px;
+    }
+}
+a {
+    color: #00bfff;
+    text-decoration: underline;
+}
+.menu button {
+    position: relative;
+    background: #23283a;
+    color: #00bfff;
+    border: 2px solid #00bfff;
+    padding: 10px 28px;
+    border-radius: 14px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    z-index: 0;
+    overflow: hidden;
+    margin: 0 12px;
+}
+.menu button a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+/* Glow arc-en-ciel */
+.menu button::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #23283a;
+    left: 0;
+    top: 0;
+    border-radius: 14px;
+}
+.menu button::before {
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #FF0000, #FF7300, #FFFB00, #48FF00,
+        #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    background-size: 600%;
+    z-index: -2;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 18px;
+    opacity: 0;
+}
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+.menu button:hover::before {
+    opacity: 1;
+}
+.menu button:active::after {
+    background: transparent;
+}
+.menu button:active {
+    color: #000;
+    font-weight: bold;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin: 50px;
+}

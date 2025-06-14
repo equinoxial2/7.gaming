@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="7gaming.css">
+    <link rel="icon" type="image/png" href="7-gaming.ico">
+    <title>7.gaming</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="7-gaming.png" alt="logo site">
+
+
+        <button id="theme-toggle" title="Changer le thème">🌙</button>
+
+
+
+
+
+        <div class="connect">
+            <button><span aria-hidden="true">👤</span><a href="connection.html"> Connexion</a></button>
+            <!-- le # c'est la ou iron les liens d'inscription-->
+        </div>
+    </header>
+    <nav>
+        <!-- "#" place pour d'autre page web lier au site-->
+        <div class="menu">
+            <button><a href="7gaming.html">Accueil</a></button>
+            <button><a href="à_propos.html">À propos</a></button>
+            <button><a href="service.html">Service</a></button>
+            <button><a href="contact.html" target="_blank">Contact</a></button>
+        </div>
+    </nav>
+    <main class="presentation">
+        <!-- Barre de recherche -->
+        <form class="search-bar" action="#" method="get">
+            <input type="text" placeholder="Rechercher un jeu, un joueur..." name="search">
+            <button type="submit">🔍</button>
+        </form>
+
+        <!-- filepath: c:\Users\BRAHIMI\Desktop\HTML.CSS\7gaming.html -->
+        <section class="jeux-proposes">
+            <h2>Jeux proposés</h2>
+            <div class="jeux-grid">
+                <div class="jeu-card">
+                    <img src="zed lol.png" alt="League of Legends">
+                    <span>League of Legends</span>
+                </div>
+                <div class="jeu-card">
+                    <img src="intérogation-Photoroom.png" alt="?">
+                    <span><!--Teamfight Tactics--></span>
+                </div>
+                <div class="jeu-card">
+                    <img src="intérogation-Photoroom.png" alt="?">
+                    <span><!--Valorant--></span>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+
+
+        <p>🎮 7.Gaming - La plateforme qui transforme le gaming en véritable défi ! 🎮<br>
+            Tu es un joueur passionné de League of Legends, ou d’autres jeux compétitifs ?<br>
+            7.Gaming est la plateforme idéale pour toi ! Nous connectons des joueurs de même niveau pour des
+            affrontements stratégiques et intenses.
+        </p>
+        <p>Nous offrons une expérience de jeu unique, où chaque match est un véritable défi. Que tu sois un joueur
+            occasionnel ou un pro, tu trouveras ton bonheur sur 7.Gaming !</p>
+
+        <p class="slogan-gain">
+            💸 Transforme ta passion et tes compétences sur League of Legends et d'autres jeux en véritables gains !<br>
+            Sur 7.Gaming,<br> chaque victoire peut te rapporter de l'argent.<br> Joue, progresse, gagne !
+        </p>
+        <p>Rejoins-nous dès maintenant et découvre une nouvelle façon de jouer !</p>
+        <p>Nous sommes impatients de te voir sur le champ de bataille !</p>
+        <p>Pour plus d'informations, n'hésite pas à nous contacter !</p>
+        <p>Tu as une idée pour améliorer ton expérience de jeu ? Partage-la avec nous, nous sommes à l’écoute de la
+            communauté !</p>
+
+        <p>Que tu cherches des conseils, des stratégies ou simplement à discuter de tes jeux préférés, notre équipe est
+            là pour toi.</p>
+        <p>Pas besoin d’être un joueur professionnel ou un grand streameur pour vivre de ta passion ! Sur 7.Gaming,
+            chacun a sa chance de transformer le jeu vidéo en opportunité. Que tu sois amateur ou joueur confirmé, il
+            existe de nombreuses façons de gagner ta vie grâce au gaming. Rejoins-nous et découvre comment ta passion
+            peut devenir bien plus qu’un simple loisir !
+        </p>
+
+    </main>
+    <section class="explication-joueur">
+        <h2>Comment ça marche ?</h2>
+        <div class="explication-cards-grid">
+            <div class="explication-card card-1">
+                <span class="explication-icone">🎮</span>
+                <h3>1. Inscris-toi</h3>
+                <p>Crée ton compte gratuitement et rejoins la communauté 7.Gaming!</p>
+            </div>
+            <div class="explication-card card-2">
+                <span class="explication-icone">🤝</span>
+                <h3>2. Trouve des adversaires</h3>
+                <p>Affronte des joueurs de ton niveau sur tes jeux préférés.</p>
+            </div>
+            <div class="explication-card card-3">
+                <span class="explication-icone">🏆</span>
+                <h3>3. Mise sur ton match</h3>
+                <p>Après avoir trouvé un adversaire, mise une somme égale à la sienne.</p>
+            </div>
+            <div class="explication-card card-4">
+                <span class="explication-icone">💸</span>
+                <h3>4. Gagne des gains</h3>
+                <p>Transforme tes victoires en récompenses et fais évoluer ta passion !</p>
+            </div>
+
+            <defs>
+                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#00bfff" />
+                </marker>
+            </defs>
+            </svg>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Seven.Gaming - Tous droits réservés.</p>
+    </footer>
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        function setTheme(theme) {
+            document.body.classList.remove('light-theme', 'dark-theme');
+            document.body.classList.add(theme);
+            themeToggle.textContent = theme === 'light-theme' ? '☀️' : '🌙';
+            localStorage.setItem('theme', theme);
+        }
+        // Initialisation au chargement
+        const savedTheme = localStorage.getItem('theme') || 'dark-theme';
+        setTheme(savedTheme);
+        // Changement au clic
+        themeToggle.onclick = () => {
+            const newTheme = document.body.classList.contains('dark-theme') ? 'light-theme' : 'dark-theme';
+            setTheme(newTheme);
+        };
+    </script>
+    <!-- ...existing code... -->
+</body>
+
+</html>
